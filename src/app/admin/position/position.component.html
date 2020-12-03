@@ -1,0 +1,64 @@
+<app-header></app-header>
+<app-crud-table
+  [columnsToDisplay]="columnsToDisplay"
+  [data] = "data"
+  [elementName] = "'position'"
+  (save) = "savePosition($event)"
+  (delete) = "deletePosition($event)"
+  (update) = "updatePosition($event)"
+  ></app-crud-table>
+
+<!-- <mat-card>
+  <mat-card-header>Position</mat-card-header>
+  <mat-card-content>
+    <div class="example-container mat-elevation-z8">
+      <button mat-raised-button color="primary"  class="add" (click)="openSavePositionPopup()">Add Position</button>
+      <table mat-table [dataSource]="dataSource">
+
+        
+        <ng-container matColumnDef="name" >
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="code" >
+          <th mat-header-cell *matHeaderCellDef> Code </th>
+          <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="hierarchy">
+          <th mat-header-cell *matHeaderCellDef> Hierarchy </th>
+          <td mat-cell *matCellDef="let element"> {{element.hierarchy}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="canCreate">
+          <th mat-header-cell *matHeaderCellDef> MR Creation Allowed </th>
+          <td mat-cell *matCellDef="let element"  [style.color]="element.canCreate?'green':'black'">{{element.canCreate?'Yes':'No' }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="canEnd">
+          <th mat-header-cell *matHeaderCellDef> MR Terminating Approval Allowed </th>
+          <td mat-cell *matCellDef="let element" [style.color]="element.canEnd?'green':'black'"> {{element.canEnd?'Yes':'No'}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="update">
+          <th mat-header-cell *matHeaderCellDef>  </th>
+          <td mat-cell *matCellDef="let element" >
+            <button mat-raised-button color="primary" color="primary" (click)="openUpdatePositionPopup(element)">Update</button>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="delete">
+          <th mat-header-cell *matHeaderCellDef>  </th>
+          <td mat-cell *matCellDef="let element" >
+            <button mat-raised-button color="warn" (click)="openConfirmDeletePopup(element)">Delete</button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card> -->
