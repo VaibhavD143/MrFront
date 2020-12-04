@@ -89,7 +89,7 @@
       <th mat-header-cell  *matHeaderCellDef>PO Action</th>
       <td mat-cell *matCellDef="let materialRequest">
         <button mat-raised-button class="add-po" (click)="uploadFiles(materialRequest.id)">Add PO</button>
-        <button mat-raised-button color="warn" (click)="viewFiles(materialRequest.id,true)">Remove PO</button>
+        <button mat-raised-button style="margin-right: 8px;" color="warn" (click)="viewFiles(materialRequest.id,true)">Remove PO</button>
         <button mat-raised-button color="accent" (click)="closeMaterialRequest(materialRequest.id,true)">Close</button>
       </td>
     </ng-container>

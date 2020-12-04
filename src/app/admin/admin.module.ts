@@ -24,6 +24,7 @@ import { MakeComponent } from './make/make.component';
 import { CrudTableComponent } from './crud-table/crud-table.component';
 import { MatSelectModule } from '@angular/material/select';
 import { ServiceComponent } from './service/service.component';
+import { MatTabNav, MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -54,6 +55,7 @@ import { ServiceComponent } from './service/service.component';
     MatFormFieldModule,
     MatCheckboxModule,
     MatSelectModule,
+    MatTabsModule,
   ]
 })
 export class AdminModule { }

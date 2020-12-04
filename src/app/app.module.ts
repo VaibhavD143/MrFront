@@ -37,6 +37,7 @@ import { HomeComponent } from './home/home.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ClosedComponent } from './closed/closed.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +53,6 @@ import { ClosedComponent } from './closed/closed.component';
     RemoveFileDialogComponent,
     HomeComponent,
     ClosedComponent,
-
   ],
   imports: [
     BrowserModule,

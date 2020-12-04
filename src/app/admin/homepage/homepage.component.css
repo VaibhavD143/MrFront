@@ -3,7 +3,9 @@ button {
   height: 100%;
   font-size: large;
 }
-
+mat-card{
+  margin-top: 60px;
+}
 mat-card-content{
   height: 50%;
   margin-left: 25%;
@@ -14,4 +16,9 @@ mat-card-content{
   margin-left: 17%;
   margin-right:17%;
   margin-top: 3%;
+}
+
+.main{
+  
+  margin-top: 60px;
 }

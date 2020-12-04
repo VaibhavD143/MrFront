@@ -26,7 +26,10 @@ export class ErrorService {
         return "Server couldn't perform operation!";
       } else if (error.status == 0) {
         return "Database server not working!";
-      } else {
+      } else if (error.status == 403){
+        return "Not authorised, login again!";
+      }
+       else {
         return error.message;
       }
     }

@@ -18,7 +18,12 @@ export class LoginComponent implements OnInit {
     private loginService:LoginService,
     private router: Router,
     private storageServie : StorageService,
-    ) { }
+    ) {
+      if(storageServie.get("employeeId")!=null){
+        this.router.navigateByUrl("/home");  
+      }
+
+  }
 
   ngOnInit(): void {
   }

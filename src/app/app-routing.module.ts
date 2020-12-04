@@ -11,7 +11,7 @@ import { OriginComponent } from './admin/origin/origin.component';
 import { ServiceComponent } from './admin/service/service.component';
 
 const routes: Routes = [
-    {path:"test",component:TestComponent},
+    {path:"test",component:TestComponent,},
     {path:"home",component:HomeComponent},
     {path:"login",component:LoginComponent},
     {path:"admin", component: HomepageComponent},

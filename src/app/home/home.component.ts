@@ -12,7 +12,7 @@ import { GlobalConstants } from '../utils/global-constants';
 export class HomeComponent implements OnInit {
 
   navConfig;
-
+  
   constructor(
     private router: Router,
     public storageService: StorageService,
@@ -21,12 +21,16 @@ export class HomeComponent implements OnInit {
     if(this.storageService.get("employeeId")==null){
       this.router.navigateByUrl("/");
     }
+    else if(Number(this.storageService.get("hierarchy"))==0){
+      this.router.navigateByUrl("/admin");
+    } 
   }
 
   ngOnInit(): void {
     this.navConfig = GlobalConstants.config[this.storageService.get("hierarchy")];
   }
-
+  
+  
   logout(){
     console.log("logging out....");
     this.storageService.clear();

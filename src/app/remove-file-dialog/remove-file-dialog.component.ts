@@ -46,6 +46,7 @@ export class RemoveFileDialogComponent implements OnInit {
           break;
         }
       }
+      this.notifier.showSuccess("Deleted Successfully.");
     },error=>{
       this.notifier.showError(this.errorService.getServerMessage(error));
     })

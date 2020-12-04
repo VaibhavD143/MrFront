@@ -1,15 +1,17 @@
 - materialRequestComponent will take columns filter and data as an input will define all the coluns in single table
 Remaining:
+done - cross url prevention
+done - set proper message in errorService as per the code
+done - test approve and decline
+
+- test open and close
+- handle uploading same file in single PO
 - redirection if 403
-- cross url prevention
 - GlobalError handling is not working,, links are on doc
-- set proper message in errorService as per the code
-- test approve and decline
 - doRequiredDelievery wihtout initial value
 - Loading redirection page
 - handle logout in backend
 - upgrade view based on local storage
-- test open and close
 - update Items population in createMrForm and update mapping in backend too.
 
 How to compare dates with custom comparator?

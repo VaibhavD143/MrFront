@@ -63,7 +63,7 @@ export class OpenComponent implements OnInit {
   }
 
   async loadData(){
-    await this.materialRequestService.findAllProcessedMaterialRequest(1)
+    await this.materialRequestService.findAllPendingMaterialRequests(Number(this.storageService.get("employeeId")))
     .then(data=>{
       this.data = data;
       console.log(this.data);
