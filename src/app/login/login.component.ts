@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   username:String;
   password:String;
+  isValid = true;
 
   constructor(
     private loginService:LoginService,
@@ -26,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.isValid = true;
   }
 
   onLogin(){
@@ -37,10 +39,12 @@ export class LoginComponent implements OnInit {
       this.storageServie.set("hierarchy",data["hierarchy"]);
       this.storageServie.set("rolename",data["rolename"]);
       alert("Success!");
+      this.isValid = true;
       this.router.navigateByUrl("/home");
     },
     error=>{
       console.error(error);
+      this.isValid = false;
       alert("failed");
     });
 
